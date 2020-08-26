@@ -2,3 +2,4 @@ include LICENSE
 include README.md
 recursive-include aagdpr *.py
 recursive-include aagdpr/static *
+recursive-include aagdpr/templates *
