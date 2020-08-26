@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!-- Start Bootstrap CSS -->
+{% if NIGHT_MODE %}
+    <!-- Start Bootstrap - darkly -->
+    {% if debug %}
+        <!-- In template debug, loading less file instead of CSS -->
+        <link rel="stylesheet/less" type="text/css" href="{% static 'css/themes/darkly/darkly.less' %}" />
+        <script type="application/javascript" src="{% static 'aagdpr/js/less/2.7.3/less.min.js' %}"></script>
+    {% else %}
+        <link rel="stylesheet" href="{% static 'css/themes/darkly/darkly.min.css' %}" />
+    {% endif %}
+    <!-- End Bootstrap - darkly -->
+{% else %}
+    <!-- Start Bootstrap - flatly -->
+    {% if debug %}
+        <!-- In template debug, loading less file instead of CSS -->
+        <link rel="stylesheet/less" type="text/css" href="{% static 'css/themes/flatly/flatly.less' %}" />
+        <script type="application/javascript" src="{% static 'aagdpr/js/less/2.7.3/less.min.js' %}"></script>
+    {% else %}
+        <link rel="stylesheet" href="{% static 'css/themes/flatly/flatly.min.css' %}" />
+    {% endif %}
+    <!-- End Bootstrap - flatly -->
+{% endif %}
+<!-- End Bootstrap CSS -->
