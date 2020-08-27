@@ -31,7 +31,7 @@ Right to be Forgotten Requests
 
 ## Installation
  1. Install the Repo `pip install git+https://gitlab.com/soratidus999/aa-gdpr.git`
- 2. Add `'aagdpr',` to your `INSTALLED_APPS` in your projects `local.py`
+ 2. Add `INSTALLED_APPS.insert(0, 'aagdpr')` right before your `INSTALLED_APPS` list in your projects `local.py`
  3. Run migrations (There should be none yet)
  4. Gather your staticfiles `python manage.py collectstatic`
  3. Configure your settings as below
