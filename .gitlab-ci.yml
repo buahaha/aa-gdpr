@@ -3,7 +3,7 @@ stages:
 
 deploy_production:
   stage: deploy
-  image: python:3.8-stretch
+  image: python:3.8-buster
 
   before_script:
     - pip install twine
