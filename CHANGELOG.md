@@ -5,11 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased] - yyyy-mm-dd
+## [0.2.0 PreRelease] - 2020-08-27
 
 ### Added
 
-Local StaticFile options for CSS JS and Font delivery, Requires AA 2.7.unreleased.
+Django-ESI Template overrides
+
+## [0.1.1 PreRelease] - 2020-08-27
+
+### Fixed
+
+Deliver x-editable for bootstrap 3, not 2.
+
+## [0.1.0 PreRelease] - 2020-08-27
+
+### Added
+
+Local StaticFile options for CSS JS and Font delivery, Based on AA 2.7.4. Requires 2.7.unreleased for some resource to be properly overridden
 
 ### Changed
 
