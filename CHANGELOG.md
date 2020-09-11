@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.2.1 PreRelease] - 2020-09-11
+
+### Fixed
+
+Moment-JS Localisation now loads in the right order and properly passes Language_Code (Credit: ppfeufer)
+
 ## [0.2.0 PreRelease] - 2020-08-27
 
 ### Added
