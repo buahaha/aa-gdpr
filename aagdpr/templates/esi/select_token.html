@@ -1,4 +1,5 @@
 {% load static %}
+{% load evelinks %}
 
 <html lang="en">
     <head>
@@ -10,12 +11,12 @@
 
         <title>ESI Token Selection</title>
 
-        <script type="application/javascript" src="{% static 'aagdpr/js/jquery/3.5.1/jquery.slim.min.js' %}"></script>
-        <link rel="stylesheet" type="text/css" href="{% static 'aagdpr/css/twitter-bootstrap/4.5.2/bootstrap.min.css' %}">
-        <script type="application/javascript" src="{% static 'aagdpr/js/twitter-bootstrap/4.5.2/bootstrap.min.js' %}"></script>
-        <link rel="stylesheet" type="text/css" href="{% static 'aagdpr/css/fontawesome/5.14.0/all.min.css' %} ">
-        
+        <script type="application/javascript" src="{% static 'aagdpr/ajax/libs/jquery/3.5.1/jquery.slim.min.js' %}"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'aagdpr/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css' %}">
+        <script type="application/javascript" src="{% static 'aagdpr/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js' %}"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'aagdpr/ajax/libs/font-awesome/5.14.0/css/all.min.css' %} ">
     </head>
+
     <body class="bg-dark">
         <div class="container-fluid mt-5">
             <div class="col-lg-6 offset-lg-3" style="padding-left: 0 !important; padding-right: 0 !important;">
@@ -34,14 +35,12 @@
                                     {% for token in tokens %}
                                     <tr>
                                         <td class="text-center">
-                                            <img class="ra-avatar img-responsive"
-                                                src="https://image.eveonline.com/Character/{{ token.character_id }}_32.jpg">
+                                            <img class="ra-avatar img-responsive" src="{{ token.character_id|character_portrait_url:32 }}">
                                         </td>
                                         <td class="text-center">{{ token.character_name }}</td>
                                         <td class="text-center">
                                             {% for scope in token.scopes.all %}
-                                                <a class="nodecoration" data-toggle="tooltip" data-placement="top"
-                                                title="{{ scope.help_text }}">{{ scope.friendly_name }}</a>{% if not forloop.last %}, {% endif %}
+                                                <a class="nodecoration" data-toggle="tooltip" data-placement="top"title="{{ scope.help_text }}">{{ scope.friendly_name }}</a>{% if not forloop.last %}, {% endif %}
                                             {% endfor %}
                                         </td>
                                         <td class="text-center">
@@ -60,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="mt-2">
                     <form method="post">
                         {% csrf_token %}
