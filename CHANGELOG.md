@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.2.3 PreRelease] - 2020-09-11
+
+### Fixed
+
+Django-ESI 2.0.5 Support
+
 ## [0.2.2 PreRelease] - 2020-09-11
 
 ### Fixed
