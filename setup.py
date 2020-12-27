@@ -42,7 +42,8 @@ setup(
     ],
     python_requires='~=3.6',
     install_requires=[
-        "allianceauth>=2.7.4"
+        "allianceauth>=2.8.1",
+        "django-esi>=2.0.5",
     ],
 
 )
