@@ -19,7 +19,7 @@ Local staticfile delivery of  resources to avoid using CDNs
   * x-editable 1.5.1 <http://vitalets.github.io/x-editable>
   * Less 2.7.3 & 3.12.2 <http://lesscss.org/>
   * DataTables 1.10.21 <http://datatables.net/>
-  * Clipboard.js 2.0.6 <https://clipboardjs.com/>
+  * Clipboard.js 2.0.8 <https://clipboardjs.com/>
 * Fonts
   * FontAwesome 5.14 <https://github.com/FortAwesome/Font-Awesome>
   * OFL Lato 16 <https://fonts.google.com/specimen/Lato>
